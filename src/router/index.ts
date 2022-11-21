@@ -18,8 +18,17 @@ const routes: Array<RouteRecordRaw> = [
 ]
 
 const router = createRouter({
-  history: createWebHistory(process.env.BASE_URL),
+  // history: createWebHistory(process.env.BASE_URL),
+  history: createWebHistory(),
   routes
 })
+
+//to 目标路由
+//from 原始路由
+//next 执行此函数 才会继续渲染
+router.beforeEach((to,form,next)=>{
+  next()
+})
+
 
 export default router

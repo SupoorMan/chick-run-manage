@@ -3,7 +3,7 @@ module.exports = {
     "autoprefixer":{
       overrideBrowserslist:[
         "Android 4.1",
-        "IOS 7.1",
+        "iOS 7.1",
         "Chrome >31",
         "not ie <=11",
         "> 1%",
